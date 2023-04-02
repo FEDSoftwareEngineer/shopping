@@ -1,0 +1,28 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  align-items: center;
+}
+.types {
+  display: flex;
+}
+.types button {
+  transition: 0.25s;
+  margin: 0 2px;
+  width: 90px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.types button:hover {
+  box-shadow: 0 1px 2px 0 black !important;
+}
+
+@media (max-width: 700px) {
+  .types button {
+    width: 67px;
+    height: 40px;
+    font-size: 13px;
+  }
+}

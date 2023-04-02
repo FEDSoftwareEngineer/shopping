@@ -1,0 +1,135 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-height: 90vh;
+}
+.details a {
+  color: white;
+}
+.details a:hover {
+  color: white;
+}
+.product {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+.info {
+  margin-left: 10px;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(235, 238, 238);
+  box-shadow: 0 1px 2px 0px black;
+}
+.info h1 {
+  box-shadow: 0 0 5px 0 black;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 28px;
+}
+.info p {
+  margin: 7px;
+}
+.price {
+  color: rgb(0, 121, 0);
+  font-weight: 700;
+}
+.type {
+  color: rgb(0, 113, 158);
+  font-weight: 700;
+}
+
+.buycard {
+  box-shadow: 0 0 5px 0 black;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 200px;
+  margin-top: 70px;
+  height: 60px;
+  width: 700px;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.buyDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.buyDetails h1 {
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+}
+.buyDetails p {
+  color: white;
+}
+.cards {
+  right: 70px;
+  top: 40px;
+  position: absolute;
+  display: flex;
+}
+.priceCard,
+.buyBtn {
+  font-size: 20px;
+  background-color: #00b912;
+  height: 35px;
+  width: 90px;
+  box-shadow: 0 1px 2px 0 black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+}
+.buyBtn {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #05a3ff;
+  width: 115px;
+  margin-left: 10px;
+}
+.buyBtn:hover {
+  background-color: #0078bd;
+}
+
+.inCart,
+.inCart:hover {
+  transition: 0.25s ease-out;
+  background-color: rgb(218, 1, 1);
+}
+
+@media (max-width: 700px) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product img {
+    margin: 50px 0;
+    width: 250px;
+    height: auto;
+  }
+  .buycard {
+    padding: 0 20px;
+    margin-bottom: 200px;
+    margin-top: 70px;
+    height: 60px;
+    width: 350px;
+  }
+  .priceCard,
+  .buyBtn {
+    font-size: 15px;
+    height: 30px;
+    width: 90px;
+    font-weight: 700;
+  }
+  .buyDetails h1 {
+    font-size: 20px;
+  }
+}

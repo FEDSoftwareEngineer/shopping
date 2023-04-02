@@ -1,0 +1,9 @@
+.productList {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin: 50px 0;
+  align-self: center;
+  border-bottom: 5px solid rgb(0, 224, 213);
+}
