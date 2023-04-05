@@ -4,7 +4,7 @@ import useProgressiveImg from "../CustomHooks/useProgressiveImg";
 import loadingImg from "../images/loading.webp";
 import { Link } from "react-router-dom";
 export default function SingleProduct({ img, name, type, price, id }) {
-  const [src, { blur }] = useProgressiveImg(loadingImg, img);
+  const [src] = useProgressiveImg(loadingImg, img);
   return (
     <Link to={`/details/${id}`} className={style.product}>
       <div className={style.productImg}>

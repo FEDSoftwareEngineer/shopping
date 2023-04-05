@@ -19,16 +19,12 @@ export default function Details() {
     if (cartData.find((item) => item.id === productId)) {
       setIsCart(true);
     }
-  }, [cartData]);
+  }, [cartData, productId]);
 
-  useEffect(
-    () => {
-      if (productId !== undefined)
-        setProduct(data.find((item) => item.id === productId));
-    },
-    [productId],
-    []
-  );
+  useEffect(() => {
+    if (productId !== undefined)
+      setProduct(data.find((item) => item.id === productId));
+  }, [productId]);
   const [src] = useProgressiveImg(loadingImg, product ? product.img : "");
   if (product === undefined)
     return (

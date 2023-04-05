@@ -12,7 +12,7 @@ export default function ProductList({ type }) {
     else {
       setNewData(data);
     }
-  }, [type]);
+  }, [type, data]);
   if (newData === undefined) return <Loading />;
   return (
     <div className={style.productList}>
