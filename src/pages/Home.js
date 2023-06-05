@@ -1,4 +1,6 @@
 import { lazy } from "react";
+
+//components
 import Hero from "../components/Hero";
 
 //lazy loading imports

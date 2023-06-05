@@ -87,6 +87,10 @@ hr {
   margin: 20px 0;
 }
 
+.flex {
+  display: flex;
+}
+
 @keyframes loadingAnimation {
   from {
     transform: rotate(0deg);

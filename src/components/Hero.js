@@ -1,8 +1,10 @@
 import React from "react";
-import bg from "../images/HeroBg.webp";
-import LQbg from "../images/lowq/LQHeroBg.webp";
 import style from "../styles/Hero.module.css";
 import useProgressiveImg from "../CustomHooks/useProgressiveImg";
+
+//images
+import bg from "../images/HeroBg.webp";
+import LQbg from "../images/lowq/LQHeroBg.webp";
 
 export default function Hero() {
   const [src, { blur }] = useProgressiveImg(LQbg, bg);
