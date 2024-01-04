@@ -11,13 +11,19 @@ export default function Footer() {
             <p className={style.phone}>📞 09917410906</p>
             <p className={style.gmail}>📧 webdegan@gmail.com</p>
             <span>
-              <a href="https://www.webdegan.com" className={style.website}>
+              <a
+                href="https://www.webdegan.netlify.app"
+                className={style.website}
+              >
                 🌐 webdegan.com
               </a>
             </span>
           </div>
           <div className={`col-4 ${style.footerItems2}`}>
-            <a href="https://www.webdegan.com" className={style.projects}>
+            <a
+              href="https://www.webdegan.netlify.app"
+              className={style.projects}
+            >
               More Projects
             </a>
             <span>
